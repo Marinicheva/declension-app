@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Мариничева Екатерина | Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <form class="form-declension">
+                <div class="form-declension__data-group data-group">
+                    <label class="form-declension__input-title title-data" for="input-data">Введите слово:</label>
+                    <input type="text" name="input-data" id="input-data" class="form-declension__input input-data" placeholder="Что склоняем?">
+                    <button class="input-data__reset" type="reset" title="Очистить поле">&times;</button>
+                </div>
+
+                <label class="form-declension__cases-list-title cases-title" for="cases-list">Выберите падеж</label>
+                <select name="cases-list" id="cases-list" class="form-declension__input cases-list">
+                    <option value="nominative" class="cases-list__item cases-item">Именительный</option>
+                    <option value="genitive" class="cases-list__item cases-item">Родительный</option>
+                    <option value="dative" class="cases-list__item cases-item">Дательный</option>
+                    <option value="accusative" class="cases-list__item cases-item">Винительный</option>
+                    <option value="creative" class="cases-list__item cases-item">Творительный</option>
+                    <option value="prepositional" class="cases-list__item cases-item">Предложный</option>
+                </select>
+                <button class="form-declension__btn">Склонять</button>
+                <div class="form-declension__output"></div>
+            </form>
+        </div>
+        <div class="message">
+            <span>Некорректный ввод или пустой запрос!</span><br> Проверьте правильность ввода. Необходимо ввести существительное в единственном числе.
+            <div class="message__close"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="main-footer__contacts contact">
+                <a href="https://github.com/Marinicheva" class="contact__link contact-link"><img src="https://img.icons8.com/carbon-copy/100/000000/github-squared.png" alt="Github-Logo" class="contact-link__img" width="55" height="55">
+                </a></div>
+            <div class="main-footer__copyright">&#169; 2022 Мариничева Екатерина</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
